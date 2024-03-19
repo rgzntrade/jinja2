@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+        {% set welcome_message = 'Welcome to my site.' %}
+        <p>{{ welcome_message }}</p>
+        {% block more_content %}{% endblock %}
+    {% endblock %}
+</body>
+</html>
+
